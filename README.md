@@ -7,6 +7,10 @@ First, make sure you got the docker installed successfully, you can check it by 
 
 If error, please refer to [Docker Installation Tutorial Official Website](https://docs.docker.com/engine/install/debian/)
 
+## Clone the repository and play:
+
+`git clone --recursive git@github.com:YD-19/uol-llama2.git`
+
 simply run the following two lines in your command:
 
 `make build`
