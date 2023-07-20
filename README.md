@@ -30,3 +30,9 @@ Then, start chatting.
 3. If you want to change model, simply rebuild with the following command, for example if you want to use `13b` model:
 
 `make build model=13b-chat`
+
+4. If CUDA our of memory, you can reduce the maximum sequence length with the following command:
+
+`make build seq_len=128`
+
+If using 4090, you could set seq_len=4096 for 7b-chat model
