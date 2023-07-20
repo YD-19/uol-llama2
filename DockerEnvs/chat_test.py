@@ -26,7 +26,7 @@ def main(
 
     temp_dialogs = []
     while True:
-        input1 = input("\nInput your context\n")
+        input1 = input("> Input your context: ")
         temp_dialogs.append({"role": "user", "content": input1})
         dialogs = [temp_dialogs]
         results = generator.chat_completion(

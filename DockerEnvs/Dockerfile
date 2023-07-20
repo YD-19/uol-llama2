@@ -14,7 +14,12 @@ RUN apt-get install -y git && apt-get install -y python3-pip
 COPY start-chat.sh ./
 COPY chat_test.py ./
 
-ENTRYPOINT ["bash","./start-chat.sh"]
+ARG model
+
+RUN echo "model is" ${model}
+ENV MODEL=${model}
+
+ENTRYPOINT ["bash","./start-chat.sh", "model=${model}"]
 
 RUN echo "ALL Done"
 
